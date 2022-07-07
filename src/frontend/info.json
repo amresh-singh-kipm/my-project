@@ -1,0 +1,53 @@
+{ "user":[
+  {
+    "FirstName": "john",
+    "lastName": "deo",
+    "Email": "john@gmail.com"
+  },
+  {
+    "FirstName": "yash",
+    "lastName": "singh",
+    "Email": "yash@gmail.com"
+  },
+  {
+    "FirstName": "david",
+    "lastName": "singh",
+    "Email": "david@gmail.com"
+  },
+  {
+    "FirstName": "krish",
+    "lastName": "singh",
+    "Email": "krish@gmail.com"
+  },
+  {
+    "FirstName": "young",
+    "lastName": "singh",
+    "Email": "young@gmail.com"
+  },
+  {
+    "FirstName": "neer",
+    "lastName": "singh",
+    "Email": "neer@gmail.com"
+  },
+  {
+    "FirstName": "tom",
+    "lastName": "singh",
+    "Email": "tom@gmail.com"
+  },
+  {
+    "FirstName": "jerry",
+    "lastName": "singh",
+    "Email": "jerry@gmail.com"
+  },
+  {
+    "FirstName": "devansh",
+    "lastName": "singh",
+    "Email": "devansh@gmail.com"
+  },
+  {
+    "FirstName": "amresh",
+    "lastName": "singh",
+    "Email": "amresh@gmail.com"
+  }
+]
+}

@@ -1,0 +1,33 @@
+.form-container{
+        margin: 0px 450px;
+       padding: 40px 40px;
+        text-align: center;
+       border: solid gray 1px;
+       border-radius: 8px;
+}
+.forget-email{
+    text-align: end;
+}
+
+.google-button{
+    margin: 20px 30px 0px 300px;
+    padding: 200px 5000px;
+}
+.footer{
+    margin: 0px 250px;
+}
+.page-button{
+    
+    align-items: stretch;
+}
+.table{
+    padding: 20px 20px;
+    align-items: center;
+    border: 2px solid rgb(23, 252, 2);
+   
+}
+td{
+    
+    padding: 40px;
+    border: 1px solid rgb(6, 241, 26);
+}
