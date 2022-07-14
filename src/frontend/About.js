@@ -14,9 +14,10 @@ function About() {
     }
   }, []);
 
+ {/*Content of  page start here  */}
   return (
     <>
-      {userLogged ? (
+     {userLogged ? (
         <div className="container">
           <Navbar />
           <div className="row">
@@ -62,6 +63,8 @@ function About() {
         </div>
       ) : null}
     </>
+// {Content end here}
+
   );
 }
 export default About;

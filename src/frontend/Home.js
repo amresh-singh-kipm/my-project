@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "./Navbar";
 
-
 function Home() {
   let navigate = useNavigate();
 
@@ -15,10 +14,10 @@ function Home() {
 
   const [userLogged, setuserLogged] = useState(false);
   useEffect(() => {
-    if (localStorage.getItem("name")) 
-    {setuserLogged(true)}
-    else{
-      navigate("/login")
+    if (localStorage.getItem("name")) {
+      setuserLogged(true);
+    } else {
+      navigate("/login");
     }
   }, []);
 
@@ -58,9 +57,7 @@ function Home() {
             </div>
           </div>
         </div>
-      ) : null
-        
-      }
+      ) : null}
 
       {/* <div className="container">
       <Navbar />
