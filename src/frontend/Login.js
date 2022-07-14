@@ -8,18 +8,19 @@ function Login() {
   // state created to store value//
 
   let navigate = useNavigate();
-  const clientId =
-    "807795441363-qjngal7d1m27ib08j4icsjo1gipu5cpv.apps.googleusercontent.com";
+  const clientId = "807795441363-qjngal7d1m27ib08j4icsjo1gipu5cpv.apps.googleusercontent.com";
   const [showLoginButton, setShowLoginButton] = useState(true);
   const [showlogoutButton, setShowlogoutButton] = useState(false);
 
   //Login fuction
+
 
   let onSuccessFullLogin = (resp) => {
     console.log("resp");
     setShowLoginButton(false);
     setShowlogoutButton(true);
     localStorage.setItem("name", resp?.profileObj?.name);
+
     localStorage.setItem("email", resp?.profileObj?.email);
     navigate("/");
   };
@@ -36,10 +37,13 @@ function Login() {
   let onLoginFailure = () => {
     console.log("login is unsuccessful ");
   };
+
+
   return (
     <>
       <Navbar />
       <div className="container">
+
         <div className="row">
           <div className="col-lg-8 login">
             <h1>Login</h1>
@@ -93,5 +97,7 @@ function Login() {
       </div>
     </>
   );
-}
+
+
+    
 export default Login;
