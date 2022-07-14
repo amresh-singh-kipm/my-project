@@ -58,24 +58,6 @@ function Home() {
           </div>
         </div>
       ) : null}
-
-      {/* <div className="container">
-      <Navbar />
-      <div className="row">
-        <div className="col-md-12">
-          {datalist && datalist.map((obj) => {
-            return (<><h2>{obj.title}</h2><p className="lead">
-              by Author
-            </p>
-              <p><span className="glyphicon glyphicon-time">
-              </span> Posted on August 28, 2013 at 10:00 PM</p> {obj.body}<br />
-              <a className="btn btn-default" to="/post">Read More</a>
-              <hr /></>)
-
-          })}
-        </div>
-      </div>
-    </div> */}
     </>
   );
 }
