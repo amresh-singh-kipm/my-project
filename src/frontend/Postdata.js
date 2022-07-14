@@ -14,7 +14,7 @@ function Postdata() {
     body: "",
   });
   const [images, setImages] = useState([]);
-  const [imageErrors,setImageErrors] = useState(null);
+  const [imageErrors, setImageErrors] = useState(null);
   const [data, setData] = useState(null);
   const [isSubmit, setIsSubmit] = useState(false);
 
@@ -49,27 +49,24 @@ function Postdata() {
   //for fetching image
 
   const onImageChange = (e) => {
-    
-    console.log("images",e.target.files);
+    console.log("images", e.target.files);
     setImages(URL.createObjectURL(e.target.files[0]));
-    
   };
 
-   const validateImage = () =>{
-  
-    if(images.length<1){
+  const validateImage = () => {
+    if (images.length < 1) {
       setImageErrors("File is required");
       setIsSubmit(false);
-    }else{
+    } else {
       setImageErrors("");
       setIsSubmit(true);
-      
-    } 
-    
+    }
+
     return;
-   }
-   console.log("we are trying to find out the length",images.length);
-  //end here
+  };
+  console.log("we are trying to find out the length", images.length);
+  
+  //end of fetching image//
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -87,7 +84,7 @@ function Postdata() {
           Accept: "application/json",
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(inputValue,images),
+        body: JSON.stringify(inputValue, images),
       }).then((data) => {
         console.log("data is sent successfully", data);
       });
@@ -119,7 +116,6 @@ function Postdata() {
                   value={inputValue.userId}
                   onChange={(e) => handleChange(e)}
                 />
-             
               </div>
               {validation?.userId !== "" && <p>{validation?.userId}</p>}
               <div className="form-group">
@@ -154,12 +150,11 @@ function Postdata() {
                   name="file"
                   id="file"
                   className="form-control"
-                  
                   onChange={(e) => onImageChange(e)}
-                />  
-               <img src={images}  /> 
+                />
+                <img src={images} />
               </div>
-              {imageErrors} 
+              {imageErrors}
 
               <button onClick={handleSubmit}>Post Data</button>
             </form>
