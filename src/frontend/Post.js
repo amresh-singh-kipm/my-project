@@ -8,7 +8,7 @@ function Post() {
 
   let [comment, setComment] = useState([]);
 
-  // QUERY PARAMS
+  // QUERY PARAMS//
   const location = useLocation();
   const searchs = new URLSearchParams(location.search);
   const id = searchs.get("id");

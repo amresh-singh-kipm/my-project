@@ -4,7 +4,6 @@ import Navbar from "./Navbar";
 
 function Home() {
   let navigate = useNavigate();
-
   let [datalist, setDataList] = useState([]);
   useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/posts")
@@ -62,4 +61,3 @@ function Home() {
   );
 }
 export default Home;
-

@@ -3,6 +3,9 @@ import { useLocation } from "react-router-dom";
 import Navbar from "./Navbar";
 
 const Updatepage = () => {
+
+//declearing state 
+
   const location = useLocation();
   const searchs = new URLSearchParams(location.search);
   const id = searchs.get("id");

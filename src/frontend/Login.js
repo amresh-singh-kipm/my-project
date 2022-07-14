@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 
 function Login() {
-  // state created to store value
+  // state created to store value//
 
   let navigate = useNavigate();
   const clientId =

@@ -66,7 +66,7 @@ function Postdata() {
   };
   console.log("we are trying to find out the length", images.length);
   
-  //end of fetching image
+  //end of fetching image//
 
   const handleChange = (e) => {
     const { name, value } = e.target;
